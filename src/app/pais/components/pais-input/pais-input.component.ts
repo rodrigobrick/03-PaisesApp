@@ -1,3 +1,4 @@
+/* eslint-disable @angular-eslint/no-output-on-prefix */
 import { Component, Output, EventEmitter, OnInit, Input} from '@angular/core';
 import { debounceTime, Subject } from 'rxjs';
 
@@ -25,7 +26,6 @@ export class PaisInputComponent implements OnInit{
       this.onDebounce.emit(valor)
     })
   }
-
 
   buscar(){
     this.onEnter.emit(this.termino)
